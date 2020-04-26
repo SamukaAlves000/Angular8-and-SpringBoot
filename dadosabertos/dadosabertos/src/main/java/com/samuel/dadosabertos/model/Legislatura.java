@@ -37,35 +37,35 @@ public class Legislatura {
 	@Column(name="ID_LEGISLATURA")
 	private long idLegislatura;
 	
-
+	
 	/**
 	 * URI  da Legislatura
 	 */
 	@Column(name="URI_LEGISLATURA",nullable = false,length = 90)
-    private String uri;
+	private String uri;
 	
 	/**
 	 * Data do Início da Legislatura
 	 */
 	@Column(name="DATA_INICIO_LEGISLATURA",nullable = false,length = 10)
-    private String dataInicio;
+	private String dataInicio;
 	
 	/**
 	 * Data do fim da Legislatura
 	 */
 	@Column(name="DATA_FIM_LEGISLATURA",nullable = false,length = 10)
-    private String dataFim;
+	private String dataFim;
 	
 	/**
 	 * Ano de eleição da Legislatura
 	 */
 	@Column(name="ANO_ELEICAO_LEGISLATURA",nullable = false)
-    private long anoEleicao;
+	private long anoEleicao;
 	
 	/**
 	 * Mapeamento 1xN
 	 */
 	@OneToMany(mappedBy = "legislatura", cascade = CascadeType.ALL)
-    private Set<Deputado> deputados;
+	private Set<Deputado> deputados;
 	
 }
