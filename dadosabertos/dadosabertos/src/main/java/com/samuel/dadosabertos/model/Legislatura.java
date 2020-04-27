@@ -63,7 +63,7 @@ public class Legislatura {
 	private long anoEleicao;
 	
 	/**
-	 * Mapeamento 1xN
+	 * Mapeamento
 	 */
 	@OneToMany(mappedBy = "legislatura", cascade = CascadeType.ALL)
 	private Set<Deputado> deputados;
