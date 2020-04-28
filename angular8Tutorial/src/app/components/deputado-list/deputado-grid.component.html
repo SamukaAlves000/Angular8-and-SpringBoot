@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-lg-3 col-md-5 mb-3" *ngFor="let deputado of deputados">
+        <div class="card">
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#"><img class="card-img-top" [src]="deputado.urlFoto" alt=""></a>
+                    </div>
+                    <h6 class="card-title">
+                        <a href="#">{{ deputado.nome }}</a>
+                    </h6>
+                    <a href="#" class="btn btn-primary">Ir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
